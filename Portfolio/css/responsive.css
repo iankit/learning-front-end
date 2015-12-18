@@ -1,0 +1,30 @@
+@media screen and (min-width: 480px){
+	#primary{
+		width: 50%;
+		float: left;
+	}
+	#secondary{
+		width: 40%;
+		float: right;
+	}
+
+	/*PORTFOLIO*/
+
+	#gallery li{
+		width: 28.33%;
+	}
+	#gallery li:nth-child(4n){
+		clear: left;
+	}
+
+	/*About*/
+	.portfolio_img{
+		float: left;
+		margin: 0 5% 40px 0;
+}
+
+}
+
+@media screen and (min-width: 660px){
+	
+}
