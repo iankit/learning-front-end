@@ -1,0 +1,64 @@
+/*Basic css property*/
+html{
+	box-sizing: border-box;
+}
+body{
+	background-image: linear-gradient(260deg, #7C4382 0%, #7C4382 100%);
+	font-style: sans-serif;
+}
+.wrapper{
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 50px;
+}
+a{
+	color: white;
+	text-decoration: none;
+	background: rgba(0,0,0,0.2);
+	padding: 17px 0px;
+	display: inline-block;
+	width: 100%;
+	letter-spacing: 2px;
+	text-align: center;
+	transition: all 1s;
+}
+a:hover{
+	background: rgba(0,0,0,0.5);
+}
+.flex-nav ul{
+	display: flex;
+	border: 1px solid black;
+	margin: 0;
+	padding: 0;
+}
+.flex-nav li{
+	flex: 3;
+}
+.flex-nav .social{
+	flex: 1;
+}
+/*Responsive elements for different screens.*/
+
+@media all and (max-width:900px){
+	.flex-nav ul{
+	flex-wrap: wrap;
+	}
+	.flex-nav li{
+	flex: 1 1 50%;
+	}		
+}
+@media all and (max-width:500px){
+	.flex-nav ul{
+	flex-wrap: wrap;
+	}
+	.flex-nav li{
+	flex: 1 1 100%;
+	}
+	.flex-nav .social{
+	flex: 1 1 50%;
+}		
+}
+
+
+
+
