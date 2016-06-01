@@ -1,5 +1,5 @@
 /*Basic css property*/
-html{
+*{
 	box-sizing: border-box;
 }
 body{
@@ -7,9 +7,9 @@ body{
 	font-style: sans-serif;
 }
 .wrapper{
-	max-width: 1000px;
+	max-width: 1100px;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 20px;
 }
 a{
 	color: white;
@@ -25,11 +25,15 @@ a{
 a:hover{
 	background: rgba(0,0,0,0.5);
 }
+.toggleNav {
+  display: none;
+}
 .flex-nav ul{
 	display: flex;
 	border: 1px solid black;
 	margin: 0;
 	padding: 0;
+	list-style: none;
 }
 .flex-nav li{
 	flex: 3;
@@ -56,9 +60,60 @@ a:hover{
 	}
 	.flex-nav .social{
 	flex: 1 1 50%;
-}		
+	}	
+	  .toggleNav {
+    display: block;
+  }
+    .flex-nav ul {
+    display: none;
+  }
+  .flex-nav ul.open {
+      display:flex;
+    }
+  .wrapper{
+  	display: flex;
+  	flex-direction: column;
+  }
+  .wrapper > *{
+  	order: 9999;
+  }
+  .header{
+  	order: 2;
+  }
+  .flex-nav{
+  	order: 1;
+  }
 }
-
+.header{
+	font-size: 35px;
+	color: white;
+	text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+}
+.layout{
+	color: white;
+	text-align: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+}
+.signup input{
+	font-size: 18px;
+}
+input[type="submit"]{
+	background: rgba(0,0,0,0.6);
+	padding: 4px 10px;
+	font-size: 18px;
+	border: none;
+	color: white;
+}
+div, section, nav{
+	margin-bottom: 20px;
+}
+.image img{
+	border: 20px solid rgba(0,0,0,0.2);
+	width: 100%;
+}
 
 
 
